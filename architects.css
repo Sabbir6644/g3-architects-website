@@ -1,6 +1,7 @@
 header{
     padding: 50px 240px;
     background-color:rgba(255, 144, 14, 0.10);
+    margin-bottom: 50px;
 }
 nav{
     display: flex;
@@ -55,7 +56,42 @@ img{
     margin-top: 20px;
    
 }
+/* 1st section */
+.terms-container{
+    display: flex;
+    margin: auto;
+    width: 85%;  
+}
+.terms-container>div{
+    width: 50%;
+}
+.terms-description{
+    font-size: 1rem;
+}
+.terms{
+  padding: 150px 0px 0px 30px ;
+  
+}
+.terms-title{
+    font-size: 2.8rem;
+}
+.quick{
+    color: gray;
+}
+.features{
+    color: orange;
+}
+.image-containe{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(2,1fr);    
+    margin-left: 30px;
+}
 
+.image-containe img{
+    /* width: 80%; */
+    border-radius: 10px;
+}
 
 
 
@@ -69,11 +105,23 @@ img{
     }
     .banner-img, img{
         width: 90%;
-        margin-top: 10px;
-       
+        margin-top: 10px;      
     }
+    .terms-container{
+        flex-direction: column;
+        width: 100%;  
+    }
+    .image-containe{
+        grid-template-columns: repeat(1,1fr);    
+        margin-left: 0px;
+    }
+    .image-containe img{
+        width: 100%;
 }
-
+.terms-container>div{
+    width: 100%;
+}
+}
 /* tablet or medium devices */
 @media screen and (min-width:576px) and (max-width: 960px) {
     header {
